@@ -1,3 +1,6 @@
+import subprocess
+import re
+
 def get_installed_packages():
     # Run pip freeze command to get a list of installed packages
     output = subprocess.check_output(['pip3', 'freeze']).decode('utf-8')
